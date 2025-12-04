@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
 
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Dela+Gothic+One&family=Niconne&family=Notable&family=Poller+One&family=Six+Caps&family=Style+Script&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Cabin:ital,wght@0,400..700;1,400..700&family=Dela+Gothic+One&family=Fustat:wght@200..800&family=Niconne&family=Notable&family=Poller+One&family=Six+Caps&display=swap" rel="stylesheet">
     <title>
       Josephine Baker Website for Final Project
     </title>
@@ -66,7 +66,12 @@
       }
 
       body {
-        width: 1440px;
+width: 1440px;
+         font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+         font-size: 18px;
 
       }
 
@@ -89,35 +94,63 @@
         border-bottom-color: black;
         margin-bottom: 30px;
         
-    # firstphoto {
-          padding-top: 20px;
-        }
-        
-  
-
+      }
+      
+      h2 {
+          font-family: "Six Caps", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+         font-size: 28px;
+      }
+      
+      #firstphoto {
+        padding-top: 30px;
       }
 
       .container {
         display: grid;
         grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
         max-width: 1200px;
         background: #998675;
         background-size: cover;
         margin: 0 auto;
+        
       }
 
       .grid-item {
         align-content: center;
+        
       }
 
       .item1 {
         grid-column-start: 1;
         grid-column-end: 3;
         
-     
-
-
+        }
+      
+      .item2 {
+       
+  
+         grid-row-start: 2;
+        grid-row-end: 3;
+        
       }
+      
+      .item3 {
+    
+         grid-row-start: 2;
+        grid-row-end: 5;
+        
+      }
+      
+      .item4 {
+       
+        padding-left: 38px;
+        padding-top: 5px;
+        
+      }
+    
     </style>
 
     <div class="container">
@@ -139,16 +172,21 @@
       </header>
     </div>
 
-    <div class="item2">
-      <h1>
+   <div class="item2">
+          <h1>
         The Story
-      </h1>
-    </div>
+     </h1>
+    </div> 
     <div class="item3">
       <div id="firstphoto">
       <img src="Thestory.png" alt="Girl in a jacket">
       </div> </div>
-
+<div class="item4"><h2>
+  
+ 
+    Early Childhood
+    </h2>
+    </div>
   </body>
 
   </div>
