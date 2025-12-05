@@ -16,21 +16,22 @@
     <style>
       * {
         box-sizing: border-box;
-        margin: 0px;
+       margin: 0 auto;
         padding: 0;
       }
 
       .header {
+         text-align: center;
         display: inline-block;
         background-image: url("header.jpg");
    position: sticky;
         top: 0;
-        padding: 78.4px 57.8px 78.4px 57.8px;
+        padding: 78.4px 57.7px 78.4px 57.7px;
         padding-bottom: 59px;
 
       }
       
-      
+      /*     
       .image {
   opacity: 1;
   display: block;
@@ -70,7 +71,19 @@
   padding: 16px 32px;
 }
 
-      ul {
+       * /
+      
+    
+
+      /* If i have TIME figure out how to do double stroke
+  .stroke2 a {
+ 
+         -webkit-text-stroke: .2px black;  
+      } 
+      
+   */
+
+       ul {
         list-style: none;
         text-align: center;
       }
@@ -91,21 +104,14 @@
         padding: 0px 30px;
 
       }
-
-      /* If i have TIME figure out how to do double stroke
-  .stroke2 a {
- 
-         -webkit-text-stroke: .2px black;  
-      } 
       
-   */
-
       ul li a:hover {
         color: #EB1C24;
       }
 
       body {
-width: 1440px;
+     
+  width: 1440px;
          font-family: "Fustat", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -134,36 +140,35 @@ width: 1440px;
     
 
     .container {
-      justify-content: center;
+   
         display: flex;
         flex-wrap: wrap;
         max-width: 1200px;
         background: #D6C3B4;
         background-size: cover;
-        margin: 0 auto;
-         
+        
       }
+      
 
-  .column {
+
+/* Create four equal columns that sits next to each other */
+.column {
   flex: 25%;
   max-width: 25%;
-  padding: 0px 4px;
-       position: relative;
-  
+  padding: 0 4px;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
- 
-}
-        
+  
+      }
    
     
     </style>
+    <body> 
+   <div class="container">
 
-    <div class="container">
-  <body>
 
 
     
@@ -180,11 +185,11 @@ width: 1440px;
 
       </div>
  
-          <h1>
-        Media
-     </h1>
- 
- <div class="container"> 
+       
+
+   
+
+
    <!--
 Code copied from: [https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery]
 Author: [W3Schools]
@@ -192,7 +197,7 @@ Name: [Responsive Image Gallery]
 Description: [Scrollable image gallery]
 Date retrieved: [December 3 2025]
 -->
-
+ 
   <div class="column">
     
        <!--
@@ -202,15 +207,30 @@ Name: [Image Overlay Effects]
 Description: [Will give breif info about photo being hovered over]
 Date retrieved: [December 3 2025]
 -->
-    <img src="tigerrug.jpg" alt="hi" style="width:100%" class="image">
-<div class="middle">
-    <div class="text">Circa 1925: Portrait of American-born singer and dancer Josephine Baker (1906 - 1975) lying on a tiger rug in a silk evening gown and diamond earrings.</div>
-  </div>
-  </div>
+    <img src="tigerrug.jpg" alt="hi" style="width:100%">
+<!--  <div class="middle">
+    <div class="text">Circa 1925: Portrait of Josephine lying on a tiger rug in a silk evening gown and diamond earrings.</div>
+  </div> -->
+    
+   <img src="Britanica.jpg" alt="hi" style="width:100%" >
+    </div>
+    
+    <div class="column">
+        <img src="tigerrug.jpg" alt="hi" style="width:100%">
+       <img src="Britanica.jpg" alt="hi" style="width:100%" >
+    </div>
+      <div class="column">
+        <img src="tigerrug.jpg" alt="hi" style="width:100%">
+       <img src="Britanica.jpg" alt="hi" style="width:100%" >
+    </div>
+      <div class="column">
+        <img src="tigerrug.jpg" alt="hi" style="width:100%">
+       <img src="Britanica.jpg" alt="hi" style="width:100%" >
+    </div>
     </div>
 
-  </body>
 
-  </div>
+
+ </body>
   </head>
 </html>
