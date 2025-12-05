@@ -23,13 +23,52 @@
       .header {
         display: inline-block;
         background-image: url("header.jpg");
-  
-        position: sticky;
+   position: sticky;
         top: 0;
         padding: 78.4px 57.8px 78.4px 57.8px;
         padding-bottom: 59px;
 
       }
+      
+      
+      .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .4s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .4s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+    font-family: "Fustat", sans-serif;
+ 
+  font-weight: 560;
+  font-style: normal;
+  background-color: #242323;
+  color: white;
+  font-size: 14px;
+  padding: 16px 32px;
+}
 
       ul {
         list-style: none;
@@ -76,6 +115,7 @@ width: 1440px;
       }
 
       h1 {
+ 
         color: #C1272D;
         font-size: 58px;
         font-family: "Beth Ellen", cursive;
@@ -94,27 +134,31 @@ width: 1440px;
     
 
     .container {
+      justify-content: center;
         display: flex;
         flex-wrap: wrap;
         max-width: 1200px;
         background: #D6C3B4;
         background-size: cover;
         margin: 0 auto;
-        
+         
       }
 
   .column {
   flex: 25%;
   max-width: 25%;
   padding: 0px 4px;
+       position: relative;
+  
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+ 
 }
         
-      
+   
     
     </style>
 
@@ -136,13 +180,34 @@ width: 1440px;
 
       </div>
  
-
- 
           <h1>
         Media
      </h1>
-  
  
+ <div class="container"> 
+   <!--
+Code copied from: [https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery]
+Author: [W3Schools]
+Name: [Responsive Image Gallery]
+Description: [Scrollable image gallery]
+Date retrieved: [December 3 2025]
+-->
+
+  <div class="column">
+    
+       <!--
+Code copied from: [https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity]
+Author: [W3Schools]
+Name: [Image Overlay Effects]
+Description: [Will give breif info about photo being hovered over]
+Date retrieved: [December 3 2025]
+-->
+    <img src="tigerrug.jpg" alt="hi" style="width:100%" class="image">
+<div class="middle">
+    <div class="text">Circa 1925: Portrait of American-born singer and dancer Josephine Baker (1906 - 1975) lying on a tiger rug in a silk evening gown and diamond earrings.</div>
+  </div>
+  </div>
+    </div>
 
   </body>
 
