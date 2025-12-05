@@ -25,23 +25,24 @@
         font-family: "Special Gothic Expanded One", sans-serif;
         font-weight: 400;
         font-style: normal;
-        -webkit-text-stroke: 0.7px black;
-padding-left: 11px;
+        -webkit-text-stroke: 0.7px white;
+padding-left: 26px;
         padding-top: 15px;
         padding-bottom: 20px;
-        font-size: 28px;
-        letter-spacing: 0.9px;
+        font-size: 52px;
+        letter-spacing: 3px;
+        color: white;
       }
 
       h2 a {
         font-family: "Candal", sans-serif;
         font-weight: 400;
         font-style: normal;
-        -webkit-text-stroke: 0.4px black;
-        padding-left: 11px;
+        -webkit-text-stroke: 0.4px white;
+        padding-left: 26px;
         padding-top: 15px;
         padding-bottom: 20px;
-        font-size: 31px;
+        font-size: 55px;
 
       }
 
@@ -123,8 +124,8 @@ padding-left: 11px;
       }
 
       img {
-        height: 100%;
-        width: auto;
+        height: auto;
+        width: 100%;
 
       }
 
@@ -133,9 +134,7 @@ padding-left: 11px;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
-        max-width: 1200px;
-        background: #D6C3B4;
-        background-size: cover;
+        background: #454034;
         margin: 0 auto;
 
       }
@@ -148,7 +147,6 @@ padding-left: 11px;
       .item1 {
         grid-column-start: 1;
         grid-column-end: 3;
-
         background-image: url("header.jpg");
         position: sticky;
         top: 0;
@@ -157,42 +155,43 @@ padding-left: 11px;
       }
 
       .item2 {
-        width: 1200px;
         background-color: white;
         grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
         text-align: center;
-        
         padding: 30px;
 line-height: 40px;
       }
 
    
 
-      .item4 {
+      .item3 {
+        text-align: center;
         grid-row-start: 3;
-        padding-top: 30px;
-        padding-left: 24px;
-        padding-bottom: 25px;
-
+        padding: 13px;
+       grid-column-start: 1;
+        grid-column-end: 3;
+        width: 1100px;
       }
-
+  
+      .item4 {
+            width: 450px;
+           grid-row-start: 4;
+         
+        }
+      
+        .item5 {
+          width: 500px;
+           grid-row-start: 4;
+         
+        background-color: yellow;
+        }
+    
+      
       
 
-      .grid-albums-columns {
-        display: flex;
-          flex-wrap: wrap;
-        gap: 90px;
-          align-items: center;
-            justify-content: center;
-text-align: center;
-
-      }
-
-      .grid-albums-item {
-        
-        height: 250px;
-
-      }
+    
     </style>
 
     <div class="container">
@@ -220,11 +219,19 @@ text-align: center;
       </b></p>
     </div>
   
-    <div class="item4">
+    <div class="item3">
       <h2>
-        <a>A</a>LBUMS &amp;<a>C</a>OMPILATIONS
+        <a>F</a>EARLESS &amp;<a>F</a>REE: A MEMOIR
       </h2>
-     
+          </div>
+     <div class="item4">
+      <img src="photos/book.jpg" alt="Girl in a jacket">  
+    </div>
+    
+    <div class="item5">
+    
+    But here
+    </div>
    
 
   </body>
