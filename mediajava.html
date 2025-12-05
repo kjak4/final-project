@@ -28,28 +28,31 @@
 
       /* Create four equal columns that sits next to each other */
       .column {
-
+max-width: 1200px;
         flex: 25%;
-        max-width: 100%;
         padding: 0 4px;
       }
 
 
 
       .header {
+        max-width: 1200px;
         text-align: center;
         display: inline-block;
         background-image: url("header.jpg");
         position: sticky;
         top: 0;
-        padding: 78.4px 57px 78.4px 57px;
+        padding: 78.4px 61px 78.4px 61px;
         padding-bottom: 59px;
         background-color: yellow;
-
+z-index: 10;
       }
 
       .subheader {
-
+        max-width: 1200px;
+ position: sticky;
+           top: 183.3px;
+   
         text-align: center;
         display: inline-block;
         background: #6e615e;
@@ -61,8 +64,8 @@
      
         letter-spacing: 8px;
         
-        padding: 30px 495.5px;
-
+        padding: 30px 499px;
+z-index: 122;
       }
 
 
@@ -106,15 +109,9 @@ color: black;
 
 
       .grid {
-
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto auto;
-      }
-
-      .item1 {
-
-        background-color: yellow;
       }
 
 
@@ -122,6 +119,7 @@ color: black;
         position: relative;
         overflow: hidden;
         width: 300px;
+        
       }
 
       .img-wrapper>img {
@@ -138,7 +136,7 @@ color: black;
         padding: 30px;
    
         text-align: center;
-        background: rgba(255, 255, 255, .4);
+        background: rgba(255, 255, 255, .45);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -158,7 +156,20 @@ color: black;
       .img-wrapper:hover>.content.fade {
         opacity: 1;
       }
+      
+      
+      .box {
+  margin: 0;
+}
+.box--double {
+  grid-column: 3 / span 2;
+	grid-row: 2 / span 2;
+}
+      
+      
+      
     </style>
+    
   <body>
     <div class="container">
 
@@ -208,12 +219,43 @@ color: black;
 
       <div class="grid">
         <div class="img-wrapper">
-          <img src="Britanica.jpg" alt="description of image">
-          <div class="content fade"> Paris 1924
+          <img src="cheetah.jpg" alt="description of image">
+          <div class="content fade"> Early 1930s; Josephine and her pet cheetah, Chiquita
           </div>
         </div>
       </div>
 
+         <div class="grid">
+        <div class="img-wrapper">
+          <img src="war1.jpg" alt="description of image">
+          <div class="content fade"> Josephine Baker arriving at the Savoy Hotel in London, April 25th 1945
+          </div>
+        </div>
+      </div>
+      
+         <div class="grid">
+        <div class="img-wrapper">
+          <img src="war1.jpg" alt="description of image">
+          <div class="content fade"> Josephine Baker arriving at the Savoy Hotel in London, April 25th 1945
+          </div>
+        </div>
+      </div>
+      
+         <div class="grid">
+        <div class="img-wrapper">
+          <img src="war1.jpg" alt="description of image">
+          <div class="content fade"> Josephine Baker arriving at the Savoy Hotel in London, April 25th 1945
+          </div>
+        </div>
+      </div>
+      
+        <div class="grid">
+        <div class="img-wrapper">
+          <img src="war1.jpg" alt="description of image">
+          <div class="content fade"> Josephine Baker arriving at the Savoy Hotel in London, April 25th 1945
+          </div>
+        </div>
+      </div>
 
 
     </div>
