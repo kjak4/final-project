@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
 
   <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bayon&family=Beth+Ellen&family=Dela+Gothic+One&family=Fustat:wght@200..800&family=Niconne&family=Poller+One&family=Special+Gothic+Expanded+One&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Candal&family=Dela+Gothic+One&family=Fustat:wght@200..800&family=Niconne&family=Poller+One&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <title>
       Josephine Baker Website for Final Project
     </title>
@@ -20,12 +20,38 @@
         padding: 0;
       }
 
+
+      h2 {
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-stroke: 0.7px black;
+
+        padding-left: 11px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        font-size: 28px;
+        letter-spacing: 0.9px;
+      }
+
+      h2 a {
+        font-family: "Candal", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-stroke: 0.4px black;
+
+        padding-left: 11px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        font-size: 31px;
+
+      }
+
       header {
-       
+
         background-image: url("header.jpg");
         position: sticky;
         top: 0;
-       
         padding: 78.4px;
         padding-bottom: 59px;
 
@@ -67,12 +93,12 @@
       }
 
       body {
-width: 1440px;
-         font-family: "Fustat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-         font-size: 18px;
+        width: 1440px;
+        font-family: "Fustat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-size: 18px;
 
       }
 
@@ -85,23 +111,8 @@ width: 1440px;
         padding-left: 40px;
         padding-bottom: 16px;
         letter-spacing: 2.1px;
-       
-        
+
       }
-      
-      h2 {
-        font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-        text-stroke: 2px;
-        
-          padding-left: 11px;
-        padding-top: 15px;
-        padding-bottom: 20px;
-         font-size: 28px;
-        
-      }
-      
 
 
       .container {
@@ -112,51 +123,83 @@ width: 1440px;
         background: #D6C3B4;
         background-size: cover;
         margin: 0 auto;
-        
+
       }
 
       .grid-item {
         align-content: center;
-        
+
       }
-      
+
       .item1 {
         grid-column-start: 1;
-  grid-column-end: 3;
-       
-        
-        }
+        grid-column-end: 3;
+
+
+      }
 
       .item2 {
-       background-color: white;
+        background-color: white;
         grid-row-start: 2;
-  
-        }
-      
+
+      }
+
       .item3 {
-       background-color: white;
-         
+        background-color: white;
+
         grid-row-start: 2;
         align-content: center;
         padding-right: 29px;
-     text-align: center; 
-      letter-spacing: 1.3px;
-        font-weight: 550;
-      line-height: 28px;
+        text-align: center;
+        letter-spacing: 1.3px;
+        font-weight: 570;
+        line-height: 28px;
 
 
-  
-        }
-      
-  .item4 {
-       
+      }
+
+      .item4 {
         grid-row-start: 3;
-  
-        }
-  
-        
+        padding-top: 30px;
+        padding-left: 24px;
+        padding-bottom: 25px;
+
+      }
+
+      .item5 {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+
+
+      }
+
+      .grid-albums {
+        width: 1200px;
+        margin-bottom: 40px;
+  padding-left: 50px;
+      }
+
+      .grid-albums-row {
+        display: flex;
       
-    
+      gap: 60px;
+   width: 170px;
+  height: 270px; 
+         object-fit: contain; 
+        align-items: center;
+
+      }
+
+      .grid-albums-item {
+        display: flex;
+        width: 150%;
+  height: 100%;
+          
+
+      }
+      
     </style>
 
     <div class="container">
@@ -166,7 +209,7 @@ width: 1440px;
     <div class="item1">
       <header>
 
-   
+
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="the-story.html">The Story</a></li>
@@ -174,27 +217,40 @@ width: 1440px;
           <li><a href="achievements.html">Achievements</a></li>
           <li><a href="novel.html">Read the novel</a></li>
         </ul>
-      
+
       </header>
     </div>
 
-   <div class="item2">
-          <h1>
+    <div class="item2">
+      <h1>
         Discography
-     </h1>
-    </div> 
+      </h1>
+    </div>
     <div class="item3">
-     Josephines’ singles, albums, and songs. Anything of <p>
-      
+      Josephines’ singles, albums, and songs. Anything of <p>
+
       </p>hers that is recorded music is in this page.
     </div>
-<div class="item4"><h2>
- ALBUMS &amp; COMPILATIONS
-  </h2>
-    
+    <div class="item4">
+      <h2>
+        <a>A</a>LBUMS &amp;<a>C</a>OMPILATIONS
+      </h2>
     </div>
-  </body>
+    <div class="item5">
+      <div class="grid-albums">
+        <div class="grid-albums-row">
+          <div class="grid-albums-item">
+            <img src="Chansons.jpg" alt="Girl in a jacket">
+          </div>
+<div class="grid-albums-item">
+            <img src="Inimitable.jpg" alt="Girl in a jacket">
+          </div>
+          
+          
+        </div>
+      </div>
 
+  </body>
   </div>
   </head>
 </html>
