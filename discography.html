@@ -113,7 +113,11 @@
         letter-spacing: 2.1px;
 
       }
-
+      img {
+        height: 100%;
+        width: auto;
+         
+      }
 
       .container {
         display: grid;
@@ -182,20 +186,18 @@
       }
 
       .grid-albums-row {
-        display: flex;
+        display: grid;
       
-      gap: 60px;
-   width: 170px;
-  height: 270px; 
+   grid-template-columns: 30% 30% 30%;
          object-fit: contain; 
         align-items: center;
 
       }
 
       .grid-albums-item {
-        display: flex;
-        width: 150%;
-  height: 100%;
+     
+     height: 250px;
+ 
           
 
       }
@@ -240,7 +242,7 @@
       <div class="grid-albums">
         <div class="grid-albums-row">
           <div class="grid-albums-item">
-            <img src="Chansons.jpg" alt="Girl in a jacket">
+            <img src="Chansons.jpg" alt="Girl in a jacket"> Hello my anme
           </div>
 <div class="grid-albums-item">
             <img src="Inimitable.jpg" alt="Girl in a jacket">
@@ -248,7 +250,7 @@
           
           
         </div>
-      </div>
+      </div> </div>
 
   </body>
   </div>
