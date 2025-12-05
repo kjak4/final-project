@@ -113,10 +113,11 @@
         letter-spacing: 2.1px;
 
       }
+
       img {
         height: 100%;
         width: auto;
-         
+
       }
 
       .container {
@@ -138,7 +139,6 @@
       .item1 {
         grid-column-start: 1;
         grid-column-end: 3;
-
 
       }
 
@@ -182,26 +182,23 @@
       .grid-albums {
         width: 1200px;
         margin-bottom: 40px;
-  padding-left: 50px;
+
       }
 
-      .grid-albums-row {
-        display: grid;
-      
-   grid-template-columns: 30% 30% 30%;
-         object-fit: contain; 
-        align-items: center;
+      .grid-albums-columns {
+        display: flex;
+        gap: 90px;
+          align-items: center;
+            justify-content: center;
+text-align: center;
 
       }
 
       .grid-albums-item {
-     
-     height: 250px;
- 
-          
+        
+        height: 250px;
 
       }
-      
     </style>
 
     <div class="container">
@@ -240,17 +237,29 @@
     </div>
     <div class="item5">
       <div class="grid-albums">
-        <div class="grid-albums-row">
+        <div class="grid-albums-columns">
           <div class="grid-albums-item">
-            <img src="Chansons.jpg" alt="Girl in a jacket"> Hello my anme
+            <img src="Chansons.jpg" alt="Girl in a jacket">
+             <p>
+            Hi
+            </p>
           </div>
-<div class="grid-albums-item">
+          <div class="grid-albums-item">
             <img src="Inimitable.jpg" alt="Girl in a jacket">
+             <p>
+            Hi
+            </p>
           </div>
-          
-          
+          <div class="grid-albums-item">
+            <img src="Encores.jpg" alt="Girl in a jacket"> 
+          <p>
+            Hi
+            </p>
+          </div>
+
         </div>
-      </div> </div>
+      </div>
+    </div>
 
   </body>
   </div>
