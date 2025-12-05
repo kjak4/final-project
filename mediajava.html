@@ -1,0 +1,219 @@
+<!--Made by Kalea November 2025 -->
+
+<!DOCTYPE html>
+<html lang="en-ca">
+  <meta charset="UTF-8">
+
+  <head>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beth+Ellen&family=Candal&family=Dela+Gothic+One&family=Fustat:wght@657&family=Niconne&family=Poller+One&family=Special+Gothic+Expanded+One&family=Sree+Krushnadevaraya&display=swap" rel="stylesheet">
+    <title>
+      Josephine Baker Website for Final Project
+    </title>
+
+
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .column {
+
+        flex: 25%;
+        max-width: 100%;
+        padding: 0 4px;
+      }
+
+
+
+      .header {
+        text-align: center;
+        display: inline-block;
+        background-image: url("header.jpg");
+        position: sticky;
+        top: 0;
+        padding: 78.4px 57px 78.4px 57px;
+        padding-bottom: 59px;
+        background-color: yellow;
+
+      }
+
+      .subheader {
+
+        text-align: center;
+        display: inline-block;
+        background: #6e615e;
+        color: white;
+        font-size: 30px;
+      font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+     
+        letter-spacing: 8px;
+        
+        padding: 30px 495.5px;
+
+      }
+
+
+      ul {
+        list-style: none;
+        text-align: center;
+      }
+
+      ul li {
+        display: inline-block;
+      }
+
+      ul li a {
+
+        text-decoration: none;
+        color: #C1272D;
+        font-size: 38px;
+        font-family: "Niconne", cursive;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-stroke: 1px #C1272D;
+        padding: 0px 30px;
+
+      }
+
+      ul li a:hover {
+        color: #EB1C24;
+      }
+
+      body {
+
+        width: 1440px;
+        font-family: "Fustat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-size: 18px;
+
+      }
+
+
+
+      .grid {
+
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+      }
+
+      .item1 {
+
+        background-color: yellow;
+      }
+
+
+      .img-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+      }
+
+      .img-wrapper>img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .img-wrapper>.content {
+        position: absolute;
+        inset: 0;
+        font-size: 18px;
+        background: rgba(255, 255, 255, .4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .img-wrapper>img,
+      .img-wrapper>.content {
+        transition: 200ms ease-in-out;
+      }
+
+      .img-wrapper>.content.fade {
+        opacity: 0;
+      }
+
+      .img-wrapper:hover>.content.fade {
+        opacity: 1;
+      }
+    </style>
+  <body>
+    <div class="container">
+
+
+
+      <div class="header">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="the-story.html">The Story</a></li>
+          <li><a href="discography.html">Discography</a></li>
+          <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="novel.html">Read the novel</a></li>
+        </ul>
+      </div>
+
+      <div class="subheader">
+        <h1>
+          Media
+        </h1>
+      </div>
+
+      <div class="grid">
+
+        <div class="img-wrapper">
+          <img src="tigerrug.jpg" alt="description of image">
+          <div class="content fade"> Paris 1923
+          </div>
+        </div>
+      </div>
+
+
+      <div class="grid">
+        <div class="img-wrapper">
+          <img src="Britanica.jpg" alt="description of image">
+          <div class="content fade"> Paris 1924
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="img-wrapper">
+          <img src="Britanica.jpg" alt="description of image">
+          <div class="content fade"> Paris 1924
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="img-wrapper">
+          <img src="Britanica.jpg" alt="description of image">
+          <div class="content fade"> Paris 1924
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </body>
+  </head>
+</html>
