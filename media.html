@@ -25,13 +25,12 @@
         background-image: url("header.jpg");
         position: sticky;
         top: 0;
-        padding: 78.4px;
+        padding: 78.4px 10px 78.4px 10px;
         padding-bottom: 59px;
 
       }
 
       ul {
-
         list-style: none;
         text-align: center;
       }
@@ -91,12 +90,11 @@ width: 1440px;
          font-size: 28px;
       }
       
-      #firstphoto {
-        padding-top: 30px;
-      }
+    
 
       .container {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         max-width: 1200px;
         background: #D6C3B4;
         background-size: cover;
@@ -104,16 +102,16 @@ width: 1440px;
         
       }
 
-      .grid-item {
-        align-content: center;
-        
-      }
+  .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 
-      .item1 {
-       background-color: white;
-        
-        }
-  
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
         
       
     
@@ -129,7 +127,7 @@ width: 1440px;
 
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="media.html">Media</a></li>
+          <li><a href="the-story.html">The Story</a></li>
           <li><a href="discography.html">Discography</a></li>
           <li><a href="achievements.html">Achievements</a></li>
           <li><a href="novel.html">Read the novel</a></li>
@@ -138,14 +136,12 @@ width: 1440px;
       </header>
  
 
-   <div class="item1">
+ 
           <h1>
-        Discography
+        Media
      </h1>
-    </div> 
-    <div class="item2">
-      hi
-    </div>
+  
+ 
 
   </body>
 
